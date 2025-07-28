@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project1 Html (Full Stack)</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #485d71, #c3d1d7);
+      font-family: 'Cairo', sans-serif;
+      color: #141313;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .book {
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 40px;
+      background-color: rgba(155, 173, 193, 0.75);
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .book img {
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    .price {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .price s {
+      color: #8326b1;
+      font-weight: bold;
+    }
+
+    .price u {
+      color: green;
+      font-weight: bold;
+    }
+
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(19, 28, 91, 0.3); /* لون أزرق شفاف وواضح */
+      animation: float 15s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-200px) scale(1.2);
+        opacity: 1;
+      }
+    }
+
+    hr {
+      height: 3px;
+      background-color: black;
+      border: none;
+      margin: 30px 0;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    a {
+      color: rgb(2, 29, 42);
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- البابلز -->
+  <div class="bubble" style="width: 60px; height: 60px; left: 5%; animation-delay: 0s;"></div>
+  <div class="bubble" style="width: 100px; height: 100px; left: 20%; animation-delay: 3s;"></div>
+  <div class="bubble" style="width: 40px; height: 40px; left: 40%; animation-delay: 5s;"></div>
+  <div class="bubble" style="width: 80px; height: 80px; left: 60%; animation-delay: 1s;"></div>
+  <div class="bubble" style="width: 50px; height: 50px; left: 75%; animation-delay: 4s;"></div>
+  <div class="bubble" style="width: 70px; height: 70px; left: 90%; animation-delay: 2s;"></div>
+
+  <h1><mark>Hello</mark></h1>
+  <h1><u>Read it by your way and discover your own worlds</u></h1>
+
+  <div class="book">
+    <h2>N.1 <sup>M</sup>ytho<sub>S</sub></h2>
+    <img src="photo.jpg" alt="صورة قصة" width="185" />
+    <h3>by "Abdul Rahman Hegazy"</h3>
+    <p style="font-size: 20px;">Talks about the modern retelling of Greek.</p>
+    <p class="price">It's price is <s>100$</s> <u>70$</u></p>
+  </div>
+
+  <hr />
+
+  <div class="book">
+    <h2>N.2 <sup>N</sup>ors<sub>e</sub> <sup>M</sup>ythology</h2>
+    <img src="Norse Mythology.jpg" alt="Norse Mythology صورة" width="185" />
+    <h3>by "Neil Gaiman"</h3>
+    <p style="font-size: 20px;">Talks about the captivation collection of north legends.</p>
+    <p class="price">It's price is <s>150$</s> <u>100$</u></p>
+  </div>
+
+  <hr />
+
+  <div class="book">
+    <h2>N.3 <sup>T</sup>he <sup>P</sup>ower<sub> </sub> of <sup>M</sup>yth</h2>
+    <img src="Stephem Fry Mythos.jpg" alt="Stephem Fry Mythos صورة" width="185" />
+    <h3>by "Joseph Campbell & Bill Moyers"</h3>
+    <p style="font-size: 20px;">Talks about the exploration of universal themes in myths across cultures.</p>
+    <p class="price">It's price is <s>170$</s> <u>150$</u></p>
+  </div>
+
+  <hr />
+
+  <h2>Coming soon</h2>
+  <p style="text-align: center;">
+    <a href="https://www.goodreads.com/genres/romance">This link'll display <span style="color:rgb(21, 21, 225);">some of the best books</span> on romance</a>
+  </p>
+
+  <footer>
+    Made by Eng / Jana Tarek Edessy
+  </footer>
+
+</body>
+</html>
